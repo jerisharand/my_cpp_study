@@ -12,4 +12,5 @@ int main() {
     using namespace std;
     cout << add (10,20) << endl;
     cout << add (10.5, 20.7) << endl;
+    return 0;
 }
