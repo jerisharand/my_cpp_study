@@ -39,8 +39,8 @@ BankAccount::BankAccount(BankAccount& x) {
 
 BankAccount::BankAccount(BankAccount&& x) {
     cout << "Move constructor called" << endl;
-    this->name = name;
-    this->type = type;
+    this->name = x.name;
+    this->type = x.type;
     this->amount = x.amount;
     x.amount = nullptr;
 }
