@@ -6,7 +6,10 @@ enum class BankAccountType {SavingsAccount, CurrentAccount};
 class BankAccount{
     
     private:
-        string name;
+/*
+    size of object(BankAccount) = sizeof(string) + sizeof(type) + sizeof(double)
+*/
+        string name;   
         BankAccountType type;
         double amount;
     public:
